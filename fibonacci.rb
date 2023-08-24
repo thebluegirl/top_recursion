@@ -1,11 +1,6 @@
 def fib(n)
-  if n <= 0
-      return Array.new
-  elsif n == 1
-      return [0]
-  end
-  
   array = [0, 1]
+  return array if array.length >= n
   until array.length == n
     array << array.last + array[array.length - 2]
   end
