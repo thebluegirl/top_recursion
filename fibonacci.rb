@@ -11,3 +11,9 @@ def fib(n)
   end
   return array
 end
+
+def fibs_rec(n, array=[0, 1])
+  return array if array.size >= n 
+  array << array.last + array[array.size - 2]
+  fibs_rec(n, array)
+end
