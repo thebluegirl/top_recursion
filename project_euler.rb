@@ -8,6 +8,8 @@ def multiples_of_3_or_5(n, array=[])
   end
   multiples_of_3_or_5(n, array)
 end
+puts multiples_of_3_or_5(1000)
+puts
 
 def even_fibonacci_nums(array=[0,1])
   if array.any? { |element| element >= 4_000_000 }
@@ -16,3 +18,5 @@ def even_fibonacci_nums(array=[0,1])
   array << array.last + array[array.size - 2]
   even_fibonacci_nums(array)
 end
+puts even_fibonacci_nums
+puts
